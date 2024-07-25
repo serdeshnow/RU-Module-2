@@ -1,19 +1,42 @@
 import { useState } from "react";
 
-const getTimeFromDate = (date) => {
-	return date.toISOString().substring(11, 19);
-};
+export const MyComponent = () => {
+	const [value, setValue] = useState(0);
 
-export const MyComponent = (props) => {
-	const [currentDate, setCurrentDate] = useState(new Date());
+	// result: + 1
+	const onClick = (event) => {
+		setValue(value + 1);
+		setValue(value + 1);
+		setValue(value + 1);
+		// console.log(event);
+	};
 
-	setTimeout(() => {
-		setCurrentDate(new Date());
-	}, 1000);
+	// if you want to change value few times in a row:
+
+	// result : + 3
+	const onClickThree = (event) => {
+		setValue((updatedValue) => updatedValue + 1);
+		setValue((updatedValue) => updatedValue + 1);
+		setValue((updatedValue) => updatedValue + 1);
+	};
+
+	// conditional rendering
+
+	const [showText, setShowText] = useState(true);
+
+	const visibilityOnClick = () => {
+		setShowText(!showText);
+	};
+
+	const text = <div>Some Text</div>;
 
 	return (
 		<>
-			<div>{getTimeFromDate(currentDate)}</div>
+			<div>{value}</div>
+			<button onClick={onClick}>Прибавить +1</button>
+
+			{showText && text}
+			<button onClick={visibilityOnClick}>{showText ? "Hide" : "Show"} text</button>
 		</>
 	);
 };

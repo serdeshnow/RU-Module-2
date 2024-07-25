@@ -9,9 +9,14 @@ import { MyComponent } from "./MyComponent";
 export const App = () => {
 	// const time = new Date();
 
+	// 6. Responding on events & conditional rendering
+	const onClick = () => {
+		console.log(123);
+	};
+
 	return (
 		<div className="App">
-			<header className="App-header">
+			<header className="App-header" onClick={onClick}>
 				<img src={logo} className="App-logo" alt="logo" />
 				<p>
 					Edit <code>src/App.js</code> and save to reload2.
