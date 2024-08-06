@@ -12,7 +12,6 @@
 
 ### File: ./.editorconfig :
 
-<!--
 root = true
 
 [*]
@@ -22,7 +21,6 @@ trim_trailing_whitespace = true
 charset = utf-8
 indent_style = tab
 indent_size = 2
--->
 
 # Project setting. Package.json
 
@@ -33,7 +31,7 @@ indent_size = 2
 "react-app",
 "react-app/jest",
 
-<!-- Install npm i eslint-config-prettier eslint-plugin-prettier prettier -->
+[ 1. Install npm i eslint-config-prettier eslint-plugin-prettier prettier]
 
 "prettier"
 ],
