@@ -1,15 +1,16 @@
 # Project Setting. Installing
 
-npx create-react-app app
+1. npx create-react-app app
 
-\>\> cd app
-\>\> npm start
+2. \>\> cd app
+
+3. \>\> npm start
 
 # Project Setting. EditorConfig
 
 ### [https://editorconfig.org/]
 
-### ./.editorconfig :
+### File: ./.editorconfig :
 
 root = true
 
@@ -23,7 +24,7 @@ indent_size = 2
 
 # Project setting. Package.json
 
-### ./app/package.json :
+### File: ./app/package.json :
 
 "eslintConfig": {
 "extends": [
@@ -43,7 +44,7 @@ indent_size = 2
 
 ### [https://prettier.io/docs/en/options]
 
-### ./app/.prettierrc.json :
+### File: ./app/.prettierrc.json :
 
 {
 "printWidth": 90,
