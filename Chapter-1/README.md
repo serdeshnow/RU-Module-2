@@ -1,15 +1,15 @@
-## Project Setting. Installing
+# Project Setting. Installing
 
 npx create-react-app app
 
-> > cd app
-> > npm start
+\>\> cd app
+\>\> npm start
 
-## Project Setting. EditorConfig
+# Project Setting. EditorConfig
 
-# [https://editorconfig.org/]
+### [https://editorconfig.org/]
 
-# ./.editorconfig :
+### ./.editorconfig :
 
 root = true
 
@@ -21,9 +21,9 @@ charset = utf-8
 indent_style = tab
 indent_size = 2
 
-## Project setting. Package.json
+# Project setting. Package.json
 
-# ./app/package.json :
+### ./app/package.json :
 
 "eslintConfig": {
 "extends": [
@@ -39,11 +39,11 @@ indent_size = 2
 ]
 },
 
-## Project setting. Prettier
+# Project setting. Prettier
 
-# [https://prettier.io/docs/en/options]
+### [https://prettier.io/docs/en/options]
 
-# ./app/.prettierrc.json :
+### ./app/.prettierrc.json :
 
 {
 "printWidth": 90,
@@ -54,4 +54,4 @@ indent_size = 2
 "trailingComma": "all"
 }
 
-## Making project template.
+# Making project template.
