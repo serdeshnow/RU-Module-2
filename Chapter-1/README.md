@@ -12,6 +12,7 @@
 
 ### File: ./.editorconfig :
 
+<!--
 root = true
 
 [*]
@@ -21,6 +22,7 @@ trim_trailing_whitespace = true
 charset = utf-8
 indent_style = tab
 indent_size = 2
+-->
 
 # Project setting. Package.json
 
